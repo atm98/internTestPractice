@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <ImageView
+        android:id="@+id/cameraIcon"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_icon_camera_post" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageText"
+        app:layout_constraintStart_toEndOf="@+id/cameraIcon"
+        app:srcCompat="@drawable/ic_icon_image_post" />
+
+    <ImageView
+        android:id="@+id/videoIcon"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginEnd="206dp"
+        android:layout_marginRight="206dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/videoText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageIcon"
+        app:srcCompat="@drawable/ic_icon_video_post" />
+
+    <TextView
+        android:id="@+id/cameraText"
+        android:clickable="true"
+        android:layout_width="64dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cameraIcon"
+        app:layout_constraintStart_toStartOf="@+id/cameraIcon" />
+
+    <TextView
+        android:id="@+id/imageText"
+        android:layout_width="64dp"
+        android:layout_height="20dp"
+
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageIcon"
+        app:layout_constraintStart_toStartOf="@+id/imageIcon" />
+
+    <TextView
+        android:id="@+id/videoText"
+        android:layout_width="64dp"
+        android:layout_height="20dp"
+
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:textColor="#4a4a4a"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/videoIcon"
+        app:layout_constraintStart_toStartOf="@+id/videoIcon" />
+
+    <TextView
+        android:id="@+id/attachText"
+        android:layout_width="188dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="7dp"
+
+        android:includeFontPadding="false"
+        android:textColor="@color/slate"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/cameraIcon"
+        app:layout_constraintEnd_toEndOf="@+id/videoIcon"
+
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/cameraIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>
